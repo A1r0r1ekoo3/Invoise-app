@@ -1,15 +1,15 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
 function RootLayout() {
   return (
-    <>
-        <Navbar/>
-        <main>
-            <Outlet/>
-        </main>
-    </>
-  )
+    <div className="lg:flex lg:h-full ">
+      <Navbar />
+      <main className="bg-[#DFE3FA] w-screen h-screen  ">
+        <Outlet />
+      </main>
+    </div>
+  );
 }
 
-export default RootLayout
+export default RootLayout;
